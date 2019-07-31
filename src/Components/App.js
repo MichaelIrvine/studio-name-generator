@@ -9,12 +9,15 @@ import React from "react";
 
 class App extends React.Component {
     state = {firstWord: '', secondWord: ''};
-    firstWordArr = [];
+    firstWordArr = ['lizard','cool','dog','wowwww'];
     secondWordArr = ['studio','agency','creative','design'];
 
 
-    generateName(word){
-
+    componentDidMount(){
+        this.setState({
+            firstWord: this.firstWordArr[Math.floor(Math.random() * this.firstWordArr.length)],
+            secondWord: this.secondWordArr[Math.floor(Math.random() * this.secondWordArr.length)],
+        })
     };
 
     render() {
