@@ -1,23 +1,48 @@
 @import url("https://use.typekit.net/xdk5cae.css");
 body {
+  padding: 1em;
   font-family: forma-djr-display, sans-serif;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  background-color: #E0E3E4;
 }
 
-.container {
-  height: 100vh;
+h2 {
+  display: inline-block;
+  font-size: 42px;
+}
+
+.app .container {
+  height: 50vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container .col_01 {
+.app .container .col_01 {
   width: 50%;
 }
 
-.container .col_02 {
+.app .container .col_02 {
   width: 50%;
+}
+
+.app button {
+  border: none;
+  background-color: transparent;
+  font-family: forma-djr-display, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.app button:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.app button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
